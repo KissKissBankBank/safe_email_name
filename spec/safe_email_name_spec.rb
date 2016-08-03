@@ -8,7 +8,14 @@ describe SafeEmailName do
   let(:name) { "foo" }
   let(:email) { "foo@bar.com" }
 
-  subject { SomeModel.new.safe_email_name('foo', 'foo@bar.com') }
+  subject { SomeModel.safe_email_name(name, email) }
 
-  it { expect(subject).to eq("#{name} <#{email}>") }
+  it { expect(subject).to eq("foo <foo@bar.com>") }
+
+  context "when the name and email contain unauthorized characters" do
+    let(:name) { 'f<o>"o' }
+    let(:email) { 'f<o>"o@bar.com' }
+
+    it { expect(subject).to eq('foo <foo@bar.com>') }
+  end
 end
