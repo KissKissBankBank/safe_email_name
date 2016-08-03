@@ -9,6 +9,6 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.files       = ['lib/safe_email_name.rb']
 
-  s.add_dependency 'activesupport'
-  s.add_development_dependency 'rspec'
+  s.add_dependency 'activesupport', '~> 0'
+  s.add_development_dependency 'rspec', '~> 0'
 end
