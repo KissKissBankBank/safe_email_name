@@ -31,4 +31,9 @@ describe SafeEmailName do
     let(:name) { " \n \t" }
     it { expect(subject).to eq('foo@bar.com') }
   end
+
+  context "when the name is nil" do
+    let(:name) { nil }
+    it { expect(subject).to eq('foo@bar.com') }
+  end
 end

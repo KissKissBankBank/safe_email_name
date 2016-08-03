@@ -5,8 +5,9 @@ require 'active_support/core_ext/string/filters' # squish
 module SafeEmailName
   def safe_email_name(name, email)
     escaped_chars = /["<>]/
+
     email = email.gsub(escaped_chars, '')
-    name = name.gsub(escaped_chars, '').squish
+    name = (name || "").gsub(escaped_chars, '').squish
     if name.blank?
       email
     else
