@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'safe_email_name'
-  s.version     = '1.0.0'
+  s.version     = '1.0.1'
   s.authors     = ['Sunny Ripert']
   s.email       = ['sunny@kisskissbankbank.com']
   s.homepage    = 'https://github.com/KissKissBankBank/safe_email_name'
@@ -9,6 +9,6 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.files       = ['lib/safe_email_name.rb']
 
-  s.add_dependency 'activesupport', '~> 0'
-  s.add_development_dependency 'rspec', '~> 0'
+  s.add_dependency 'activesupport'
+  s.add_development_dependency 'rspec'
 end
