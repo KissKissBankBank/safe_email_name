@@ -8,5 +8,7 @@ Gem::Specification.new do |s|
   s.description = 'Escape the name in To and From fields in emails'
   s.license     = 'MIT'
   s.files       = ['lib/safe_email_name.rb']
+
+  s.add_dependency 'activesupport'
   s.add_development_dependency 'rspec'
 end
