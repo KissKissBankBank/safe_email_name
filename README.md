@@ -23,3 +23,11 @@ class UserMailer < ActionMailer::Base
   end
 def
 ```
+
+
+Tests
+-----
+
+```rb
+bundle exec rspec
+```
