@@ -31,3 +31,14 @@ Tests
 ```rb
 bundle exec rspec
 ```
+
+
+Release
+-------
+
+Update the version number in the gemspec, then:
+
+```
+gem build safe_email_name.gemspec
+gem push safe_email_name-*.gem
+```
