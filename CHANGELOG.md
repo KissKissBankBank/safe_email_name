@@ -4,9 +4,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [unreleased]
 
+Feature:
+- Preserve special characters in the name.
+
 ## [v1.0.1] - 2016-08-03
 
-Fixes impossible version numbers for activesupport and rspec.
+Fix:
+- Fixes impossible version numbers for activesupport and rspec.
 
 ## [v1.0.0] - 2016-08-03
 
