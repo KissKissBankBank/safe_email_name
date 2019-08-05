@@ -3,6 +3,7 @@ SafeEmailName
 
 Format the "From" and "To" fields in emails, correctly escaped.
 
+
 Usage
 -----
 
@@ -42,3 +43,9 @@ Update the version number in the gemspec, then:
 gem build safe_email_name.gemspec
 gem push safe_email_name-*.gem
 ```
+
+
+Future
+------
+
+This has been proposed as a Rails patch: [#36454](https://github.com/rails/rails/pull/36454).
