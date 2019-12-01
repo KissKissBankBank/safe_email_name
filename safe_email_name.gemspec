@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'safe_email_name'
-  s.version     = '1.0.1'
+  s.version     = '1.1.0'
   s.authors     = ['Sunny Ripert']
   s.email       = ['sunny@kisskissbankbank.com']
   s.homepage    = 'https://github.com/KissKissBankBank/safe_email_name'
